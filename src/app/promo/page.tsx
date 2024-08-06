@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/landingPage/Header";
 import Footer from "../components/landingPage/Footer";
-import { navContent, navContentPromo } from "../components/assets/data/Components";
+import { navContentPromo } from "../components/assets/data/Components";
 import { Hero } from "../components/landingPage/Hero";
 import { AboutPromo } from "../components/landingPage/About";
 import { ChoosePromo } from "../components/landingPage/Choose";

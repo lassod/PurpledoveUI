@@ -8,6 +8,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
+import { Reveal3 } from "../components/animations/Text";
 
 const Blog = () => {
 	return (
@@ -50,7 +51,9 @@ const Blog = () => {
 							<Image className="w-full" src={item.image} alt="Image" />
 						</div>
 						<h5>{item.title}</h5>
-						<p>{item.text}</p>
+						<Reveal3>
+							<p>{item.text}</p>
+						</Reveal3>
 						<div className="flex items-center gap-3">
 							<Image src={Avatar} alt="Avatar" />
 							<div>

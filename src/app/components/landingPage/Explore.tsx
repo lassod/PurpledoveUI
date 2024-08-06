@@ -17,17 +17,17 @@ const Explore = () => {
 					<p>Experience the power of PurpleDove ERP with a personalised demo. Our experts will show you how our ERP system can transform your business operations and drive growth.</p>
 				</Reveal3>
 				<div className="flex items-center justify-between gap-14">
-					<div className="flex flex-col items-center gap-1">
+					<div className="flex flex-col items-center justify-center gap-1">
 						<Counter target={3} className="text-[#A700AF]" />
-						<p>YEARS EXISTENCE</p>
+						<p className="text-center">YEARS EXISTENCE</p>
 					</div>
 					<div className="flex flex-col items-center gap-1">
 						<Counter target={2.5} className="text-[#ab36b1]" />
-						<p>ACTIVE USERS</p>
+						<p className="text-center">ACTIVE USERS</p>
 					</div>
 					<div className="flex flex-col items-center gap-1">
 						<Counter target={250} className="text-[#ab36b1]" />
-						<p>HAPPY CLIENTS</p>
+						<p className="text-center">HAPPY CLIENTS</p>
 					</div>
 				</div>
 				<Link href="https://calendly.com/lassod/purpledove-webinar-session" target="_blank" rel="noopener noreferrer">

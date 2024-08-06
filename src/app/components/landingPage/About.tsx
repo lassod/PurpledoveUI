@@ -48,7 +48,7 @@ export const AboutPromo = () => {
 		<section className="bg-[#F6E5F7] grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-28 items-center justify-between py-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
 			<div className="relative max-w-[447px] border-4 mx-auto">
 				<Image className="max-w-full" src={PromoImg} alt="PromoImg" />
-				<div className="w-[100px] sm:w-[224px] rounded-lg p-6 absolute top-16 lg:top-auto lg:bottom-10 right-[-10px] sm:right-[-60px] bg-white">
+				<div className="w-[180px] sm:w-[224px] rounded-lg p-6 absolute top-16 lg:top-auto lg:bottom-10 right-[-10px] sm:right-[-60px] bg-white">
 					<Counter target={250} className="mb-4" />
 					<p className="text-black">Happy Clients</p>
 				</div>

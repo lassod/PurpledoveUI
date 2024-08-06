@@ -46,7 +46,7 @@ const MobileMenu = ({ headerData }: HeaderProps) => {
 					{headerData.map((header) => (
 						<section key={header.title}>
 							<SheetClose asChild>
-								<Link href={header.url} className="hover:text-[#A700AF] hover:font-medium">
+								<Link href={header.url} className="text-[#A700AF] uppercase hover:font-semibold">
 									{header.title}
 								</Link>
 							</SheetClose>

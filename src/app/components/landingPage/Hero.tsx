@@ -31,7 +31,7 @@ export const Hero = ({ display }: AddContentProps) => {
 				{display && (
 					<Link href="/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-5 bg-[#F6E5F7] p-2 rounded-full max-w-[404px]">
 						<p className="text-white font-medium bg-[#A700AF] py-1 px-4 rounded-full">NEW</p>
-						<p className="text-black font-medium">Visit the PurpleDove website</p>
+						<p className="text-black text-[13px] sm:text-[14px] font-medium">Visit the PurpleDove website</p>
 						<ChevronRight />
 					</Link>
 				)}
@@ -64,7 +64,7 @@ export const Hero = ({ display }: AddContentProps) => {
 
 export const HeroFeatures = () => {
 	return (
-		<section className="relative grid-cols-1 grid md:grid-cols-2 gap-10 items-center justify-between pt-48 pb-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
+		<section className="relative grid-cols-1 grid md:grid-cols-2 gap-10 items-center justify-between pt-48 pb-20 lg:pb-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
 			<div className="flex flex-col gap-10 max-w-md">
 				<h2>Discover Our Powerful Modules</h2>
 				<Reveal3>

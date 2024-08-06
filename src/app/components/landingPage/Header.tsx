@@ -4,9 +4,9 @@ import Link from "next/link";
 import Logo from "../assets/images/Logo.svg";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Drawer, DrawerTrigger, DrawerContent, DrawerClose } from "@/components/ui/drawer";
 import { MenuIcon, X } from "lucide-react";
 import { HeaderProps } from "../schema/Types";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Header = ({ headerData }: HeaderProps) => {
 	return (
@@ -64,26 +64,21 @@ export default Header;
 
 const MobileMenu = ({ headerData }: HeaderProps) => {
 	return (
-		<Drawer>
-			<DrawerTrigger asChild>
+		<Sheet>
+			<SheetTrigger asChild>
 				<MenuIcon className="w-[24px] h-[24px]" />
-			</DrawerTrigger>
-			<DrawerContent className="max-w-[300px] p-4 w-full">
-				<div className="flex items-end justify-end">
-					<DrawerClose asChild>
-						<X className="text-gray-600 hover:text-red-700 cursor-pointer my-2" />
-					</DrawerClose>
-				</div>
+			</SheetTrigger>
+			<SheetContent>
 				<div className="flex flex-col gap-3">
 					{headerData.map((header) => (
 						<section key={header.title}>
-							<DrawerClose asChild>
+							<SheetClose asChild>
 								<Link href={header.url}>{header.title}</Link>
-							</DrawerClose>
+							</SheetClose>
 						</section>
 					))}
 				</div>
-			</DrawerContent>
-		</Drawer>
+			</SheetContent>
+		</Sheet>
 	);
 };

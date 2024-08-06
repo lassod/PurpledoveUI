@@ -5,7 +5,7 @@ export type CounterProps = {
 
 export type headerDataProps = {
 	url: string;
-	title?: any;
+	title?: string;
 };
 
 export interface HeaderProps {

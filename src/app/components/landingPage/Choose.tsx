@@ -15,7 +15,7 @@ export const Choose = () => {
 					<h2 className="max-w-sm 2xl:max-w-md">Why Choose PurpleDove ERP?</h2>
 				</Reveal1>
 				<Reveal3>
-					<p>Improve Your Business with our Cloud-based ERP Solution, Whether you're managing finance, inventory, or customer relationships, PurpleDove ERP offers an intuitive, user-friendly platform that consolidates all your processes into a single, streamlined system.</p>
+					<p>Improve Your Business with our Cloud-based ERP Solution, Whether you&apos;re managing finance, inventory, or customer relationships, PurpleDove ERP offers an intuitive, user-friendly platform that consolidates all your processes into a single, streamlined system.</p>
 				</Reveal3>
 			</div>
 
@@ -37,8 +37,8 @@ export const Choose = () => {
 				</div>
 				<div className="flex flex-col gap-3">
 					{chooseData.map((item) => (
-						<Reveal2>
-							<div className="flex items-start gap-5" key={item.title}>
+						<Reveal2 key={item.title}>
+							<div className="flex items-start gap-5">
 								<div className="bg-[#FBF2FB] flex items-center justify-center p-1 rounded-full w-10">
 									<Check className="w-5 text-[#A700AF]" />
 								</div>

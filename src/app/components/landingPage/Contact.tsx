@@ -11,7 +11,7 @@ import { Headphones, PhoneCall } from "lucide-react";
 
 export const Contact = () => {
 	return (
-		<section className="relative py-24 lg:px-8 xl:px-24 px-4 hidden lg:block max-w-screen-2xl mx-auto">
+		<section className="border-4 relative py-24 lg:px-8 xl:px-24 px-4 hidden lg:block max-w-screen-2xl mx-auto">
 			<div className="bg-[#6C0871] rounded-xl p-10 flex gap-48">
 				<div className="flex flex-col gap-8 justify-start items-start">
 					<Reveal1>
@@ -20,7 +20,7 @@ export const Contact = () => {
 					<Reveal3>
 						<p className="text-white max-w-[750px]">We invite you to explore the transformative potential of PurpleDove ERP. Discover how our all-in-one platform can streamline your business operations, improve efficiency, and drive growth.</p>
 					</Reveal3>
-					<Link href="/auth/signup" target="_blank" rel="noopener noreferrer">
+					<Link href="https://calendly.com/lassod/purpledove-webinar-session" target="_blank" rel="noopener noreferrer">
 						<Button variant={"secondary"} className="mt-6">
 							Contact Us
 						</Button>
@@ -43,7 +43,7 @@ export const ContactPromo = () => {
 					<h2 className="max-w-[694px] text-center">Contact us today and let us know what you need</h2>
 				</Reveal1>
 				<div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
-					<div className="border bg-white rounded-xl py-7 px-5 flex flex-col gap-6 max-w-[354px] items-center">
+					<div className="border bg-white rounded-xl py-7 px-5 flex flex-col gap-6 w-full md:max-w-[354px] items-center">
 						<PhoneCall className="text-[#A700AF]" />
 						<div className="flex flex-col items-center gap-3">
 							<h5>Contact Us</h5>
@@ -52,7 +52,7 @@ export const ContactPromo = () => {
 							<Button className="mt-6">Call us now</Button>
 						</div>
 					</div>
-					<div className="border bg-white rounded-xl py-7 px-5 flex flex-col gap-6 w-[354px] items-center">
+					<div className="border bg-white rounded-xl py-7 px-5 flex flex-col gap-6 w-full md:max-w-[354px] items-center">
 						<Headphones className="text-[#A700AF]" />
 						<div className="flex flex-col items-center gap-3">
 							<h5>Customer Service</h5>

@@ -42,11 +42,13 @@ const MobileMenu = ({ headerData }: HeaderProps) => {
 				<MenuIcon className="w-[24px] h-[24px]" />
 			</SheetTrigger>
 			<SheetContent>
-				<div className="flex flex-col gap-3">
+				<div className="flex flex-col gap-5 mt-10">
 					{headerData.map((header) => (
 						<section key={header.title}>
 							<SheetClose asChild>
-								<Link href={header.url}>{header.title}</Link>
+								<Link href={header.url} className="hover:text-[#A700AF] hover:font-medium">
+									{header.title}
+								</Link>
 							</SheetClose>
 						</section>
 					))}

@@ -35,6 +35,17 @@ import shola from "../images/testimonials/shola.png";
 import adeola from "../images/testimonials/adeola.png";
 import adesua from "../images/testimonials/adesua.png";
 
+import post1 from "../images/blog/post-1.png";
+import post2 from "../images/blog/post-2.png";
+import post3 from "../images/blog/post-3.png";
+import post4 from "../images/blog/post-4.png";
+import post5 from "../images/blog/post-5.png";
+import post6 from "../images/blog/post-6.png";
+import post7 from "../images/blog/post-7.png";
+import post8 from "../images/blog/post-8.png";
+import post9 from "../images/blog/post-9.png";
+import post10 from "../images/blog/post-10.png";
+
 // LANDING PAGE
 export const navContent = [
 	{
@@ -50,7 +61,7 @@ export const navContent = [
 		title: "Features",
 	},
 	{
-		url: "#blog",
+		url: "/blog",
 		title: "Blog",
 	},
 	{
@@ -178,6 +189,36 @@ export const featuresData = [
 		icon: clipboard,
 		icon2: clipboard2,
 	},
+	{
+		title: "Procurement and Supplies",
+		text: "Streamlined procurement processes, supplier database management and cost control.",
+		icon: presentation,
+		icon2: presentation2,
+	},
+	{
+		title: "Loan Management",
+		text: "Create and publish loan types, manage loan application and approvals, collaterals, interest and principal repayments.",
+		icon: bill,
+		icon2: bill2,
+	},
+	{
+		title: "Education Module",
+		text: "Industry specific tools to manage students and tutors dattabase, admission, school fees, course scheduling, assignments, results, forum, etc",
+		icon: file,
+		icon2: file2,
+	},
+	{
+		title: "Healthcare Module",
+		text: "Industry specific tools to manage students and tutors dattabase, billing, healthcare service units, healthcare practitioners, rehabilitation and physiotherapy, laboratory, nursing, medical records etc.",
+		icon: line,
+		icon2: line2,
+	},
+	{
+		title: "Not for Profit",
+		text: "Manage membership, grants, loans, donations etc",
+		icon: clipboard,
+		icon2: clipboard2,
+	},
 ];
 
 export const aboutData = [
@@ -205,11 +246,11 @@ export const navContentPromo = [
 		title: "Home",
 	},
 	{
-		url: "#features",
+		url: "/features",
 		title: "Features",
 	},
 	{
-		url: "#contact",
+		url: "/contact",
 		title: "Contact",
 	},
 ];
@@ -273,5 +314,48 @@ export const testimonialDataPromo = [
 		text: "The integration capabilities of PurpleDove ERP have simplified our processes by connecting all our essential tools",
 		name: "Ekwueme Ogechi",
 		image: ekwueme,
+	},
+];
+
+export const blogData = [
+	{
+		text: "How do you create compelling presentations that wow your colleagues and impress your managers?",
+		title: "Business review presentations",
+		image: post1,
+	},
+	{
+		text: "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
+		title: "Migrating to Linear 101",
+		image: post2,
+	},
+	{
+		text: "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
+		title: "Building your API stack",
+		image: post3,
+	},
+	{
+		text: "Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?",
+		title: "Bill Walsh leadership lessons",
+		image: post4,
+	},
+	{
+		text: "Mental models are simple expressions of complex processes or relationships.",
+		title: "PM mental models",
+		image: post5,
+	},
+	{
+		text: "Introduction to Wireframing and its Principles. Learn from the best in the industry.",
+		title: "What is wireframing?",
+		image: post6,
+	},
+	{
+		text: "Collaboration can make our teams stronger, and our individual designs better.",
+		title: "How collaboration makes us better designers",
+		image: post7,
+	},
+	{
+		text: "JavaScript frameworks make development easy with extensive features and functionalities.",
+		title: "Our top 10 Javascript frameworks to use",
+		image: post8,
 	},
 ];

@@ -29,18 +29,18 @@ export const Hero = ({ display }: AddContentProps) => {
 		<section className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-between pt-48 pb-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
 			<div className="flex flex-col gap-8 items-start">
 				{display && (
-					<div className="flex items-center gap-5 bg-[#F6E5F7] p-2 rounded-full max-w-[354px]">
+					<Link href="/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-5 bg-[#F6E5F7] p-2 rounded-full max-w-[354px]">
 						<p className="text-white font-medium bg-[#A700AF] py-1 px-4 rounded-full">NEW</p>
 						<p className="text-black font-medium">Visit the PurpleDove website</p>
 						<ChevronRight />
-					</div>
+					</Link>
 				)}
 				<h1>Transform Your Business With PurpleDove ERP</h1>
 				<Reveal3>
 					<p className="max-w-lg xl:mt-3">Experience the unparalleled efficiency and growth potential with our cost-effective ERP solution, tailored to your needs.</p>
 				</Reveal3>
 
-				<Link href="/auth/signup" target="_blank" rel="noopener noreferrer">
+				<Link href="https://calendly.com/lassod/purpledove-webinar-session" target="_blank" rel="noopener noreferrer">
 					<Button className="flex items-center gap-2">
 						Schedule A Demo
 						<ArrowUpRight className="w-5" />
@@ -64,7 +64,7 @@ export const Hero = ({ display }: AddContentProps) => {
 
 export const HeroFeatures = () => {
 	return (
-		<section className="relative grid grid-cols-2 gap-10 items-center justify-between pt-48 pb-24 lg:px-24 px-8 max-w-screen-2xl mx-auto">
+		<section className="relative grid-cols-1 grid md:grid-cols-2 gap-10 items-center justify-between pt-48 pb-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
 			<div className="flex flex-col gap-10 max-w-md">
 				<h2>Discover Our Powerful Modules</h2>
 				<Reveal3>
@@ -85,9 +85,9 @@ export const HeroFeatures = () => {
 					</div>
 				</div>
 			</div>
-			<div>
+			<div className="h-[367px] lg:h-[425px] rounded-[30px] overflow-hidden">
 				<Image className="w-full" src={featuresImg} alt="featuresImg" />
-				<Image className="max-w-screen-sm absolute bottom-0 right-0 z-[-10]" src={eclipse} alt="eclipse" />
+				<Image className="hidden lg:block max-w-screen-sm absolute bottom-0 right-0 z-[-10]" src={eclipse} alt="eclipse" />
 			</div>
 		</section>
 	);
@@ -95,14 +95,14 @@ export const HeroFeatures = () => {
 
 export const HeroAbout = () => {
 	return (
-		<section className="relative grid grid-cols-2 gap-40 items-center justify-between pt-48 pb-24 lg:px-24 px-8 max-w-screen-2xl mx-auto">
+		<section className="relative grid lg:grid-cols-2 gap-40 items-center justify-between pt-48 pb-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
 			<div className="flex flex-col gap-10">
 				<h2>Our cloud-based solution is designed to streamline the diverse needs of businesses</h2>
 				<Reveal3>
 					<p>The journey of PurpleDove began with a simple yet profound idea – to develop a dynamic and comprehensive software solution that could adapt to the evolving needs of modern enterprises in Africa.</p>
 				</Reveal3>
 			</div>
-			<div className="relative">
+			<div className="relative hidden lg:block">
 				<Image className="max-w-[378px]" src={aboutImg} alt="aboutImg" />
 				<div className="rounded-xl flex gap-4 p-6 absolute bottom-24 left-[-40px] bg-white max-w-[350px]">
 					<Image className="max-w-[120px]" src={aboutLogo} alt="aboutLogo" />
@@ -112,7 +112,7 @@ export const HeroAbout = () => {
 					</div>
 				</div>
 			</div>
-			<Image className="max-w-screen-sm absolute bottom-0 right-0 z-[-10]" src={eclipse} alt="eclipse" />
+			<Image className="hidden lg:block max-w-screen-sm absolute bottom-0 right-0 z-[-10]" src={eclipse} alt="eclipse" />
 		</section>
 	);
 };
@@ -127,7 +127,7 @@ export const HeroContact = () => {
 	};
 
 	return (
-		<section className="grid grid-cols-2 items-center gap-16 pt-48 pb-24 md:px-24 px-8 max-w-screen-2xl mx-auto">
+		<section className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 pt-48 pb-24 md:px-24 sm:px-8 px-4 max-w-screen-2xl mx-auto">
 			<div className="flex flex-col gap-5">
 				<h2>Get Started with PurpleDove ERP</h2>
 				<Reveal3>
@@ -219,13 +219,13 @@ export const HeroContact = () => {
 							)}
 						/>
 
-						<Button className="w-full" type="submit">
+						<Button className="w-full mt-5" type="submit">
 							Send
 						</Button>
 					</form>
 				</Form>
 			</div>
-			<div className="rounded-xl overflow-hidden">
+			<div className="rounded-xl hidden lg:block overflow-hidden">
 				<Image src={ContactImage} alt="ContactImage" />
 			</div>
 		</section>

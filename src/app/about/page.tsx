@@ -13,8 +13,8 @@ const About = () => {
 		<div>
 			<Header headerData={navContent} />
 			<HeroAbout />
-			<section className="grid grid-cols-2 items-center gap-16 py-24 md:px-24 px-8 max-w-screen-2xl mx-auto">
-				<div className="rounded-xl overflow-hidden">
+			<section className="grid lg:grid-cols-2 items-center gap-16 lg:py-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
+				<div className="rounded-xl hidden lg:block overflow-hidden">
 					<Image src={aboutImg2} alt="aboutImg2" />
 				</div>
 				<div className="flex flex-col gap-5">
@@ -27,9 +27,9 @@ const About = () => {
 					</p>
 				</div>
 			</section>
-			<section className="py-24 md:px-24 px-8 max-w-screen-2xl mx-auto">
+			<section className="py-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
 				{aboutData.map((item) => (
-					<div className={`grid grid-cols-2 gap-16 ${item.top && "pb-16"} ${item.bottom && "pt-16"} ${item.border && "border-t border-b py-16"}`} key={item.title}>
+					<div className={`grid md:grid-cols-2 gap-4 md:gap-16 ${item.top && "pb-16"} ${item.bottom && "pt-16"} ${item.border && "border-t border-b py-16"}`} key={item.title}>
 						<h4>{item.title}</h4>
 						<Reveal3>
 							<p>{item.text}</p>

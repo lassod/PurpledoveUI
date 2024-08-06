@@ -24,7 +24,7 @@ const Footer = ({ footerData }: FooterProps) => {
 			<Reveal3>
 				<p>Elevate your business to new heights with PurpleDove ERP.</p>
 			</Reveal3>
-			<ul className="flex gap-9">
+			<ul className="grid grid-cols-2 sm:flex gap-4 sm:gap-9 flex-wrap">
 				{footerData.map((item, index) => (
 					<Link key={index} href={item.url}>
 						<p className="text-black hover:text-[#A700AF] font-semibold">{item.title}</p>

@@ -16,14 +16,14 @@ const Demo = () => {
 					<Reveal3>
 						<p className="max-w-lg">PurpleDove ERP is versatile and adaptable, serving a wide range of industries including General Services, Consultancy, Distribution & Sales, Real Estate, Manufacturing, Education, Hospitality, Healthcare, Agriculture, and Not-for-Profit organisations.</p>
 					</Reveal3>
-					<div className="flex items-center gap-5">
-						<Link href="/auth/signup" target="_blank" rel="noopener noreferrer">
+					<div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
+						<Link href="https://calendly.com/lassod/purpledove-webinar-session" target="_blank" rel="noopener noreferrer">
 							<Button className="flex items-center gap-2">
 								Get Started
 								<ArrowUpRight className="w-5" />
 							</Button>
 						</Link>
-						<Link href="/auth/signup" target="_blank" rel="noopener noreferrer">
+						<Link href="https://calendly.com/lassod/purpledove-webinar-session" target="_blank" rel="noopener noreferrer">
 							<Button variant={"outline"} className="flex items-center gap-2">
 								<PlayCircle className="w-5" />
 								Book A Demo Now

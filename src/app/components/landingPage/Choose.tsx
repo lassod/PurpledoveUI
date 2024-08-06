@@ -21,13 +21,13 @@ export const Choose = () => {
 
 			<div className="grid lg:grid-cols-2 gap-8 lg:gap-20">
 				<div className="relative overflow-hidden rounded-2xl h-[343px] lg:h-auto">
-					<Image className="absolute z-[-10] w-full h-full lg:h-auto" src={ChooseImage} alt="ChooseImage" />
+					<Image className="absolute z-[-10] w-full h-full sm:h-auto" src={ChooseImage} alt="ChooseImage" />
 					<div className="flex flex-col justify-between items-start p-6 w-full h-full">
 						<div>
 							<p className="text-white">Ready For The Future</p>
 							<h3 className="text-white mt-4">Optimizing business processes effortlessly</h3>
 						</div>
-						<Link href="/auth/signup" target="_blank" rel="noopener noreferrer">
+						<Link href="https://calendly.com/lassod/purpledove-webinar-session" target="_blank" rel="noopener noreferrer">
 							<Button className="flex items-center gap-2">
 								Try PurpleDove For Free
 								<ArrowUpRight className="w-5" />
@@ -64,7 +64,7 @@ export const ChoosePromo = () => {
 					<p className="max-w-lg">Discover the transformative power of PurpleDove ERP today and take the first step toward a smarter, more efficient business.</p>
 				</Reveal3>
 				<div className="flex items-center gap-5">
-					<Link href="/auth/signup" target="_blank" rel="noopener noreferrer">
+					<Link href="https://calendly.com/lassod/purpledove-webinar-session" target="_blank" rel="noopener noreferrer">
 						<Button className="flex items-center gap-2">
 							Book A Demo Today
 							<ArrowUpRight className="w-5" />

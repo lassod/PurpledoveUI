@@ -11,7 +11,7 @@ const buttonVariants = cva("flex w-auto items-center mx-auto justify-center whit
 			secondary: "bg-white text-[#A700AF] border border-white hover:bg-transparent hover:text-white",
 			outline: "bg-white text-black border border-gray-200 shadow-sm hover:bg-[#A700AF] hover:border-[#A700AF] hover:text-white",
 			destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-			ghost: "hover:bg-accent hover:text-accent-foreground",
+			ghost: "bg-transparent text-[#A700AF] font-medium hover:bg-[#A700AF] hover:text-white",
 			link: "text-primary underline-offset-4 hover:underline",
 		},
 		size: {

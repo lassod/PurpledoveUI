@@ -13,14 +13,14 @@ const Contact = () => {
 		<div>
 			<Header headerData={navContent} />
 			<HeroContact />
-			<section className="grid grid-cols-2 gap-24 items-center justify-between py-24 lg:px-24 px-8 max-w-screen-2xl mx-auto">
+			<section className="grid grid-cols-1 lg:grid-cols-2 gap-10  lg:gap-24 items-center justify-between lg:pt-10 pb-24 lg:px-24 sm:px-8 px-4 max-w-screen-2xl mx-auto">
 				<div className="flex flex-col gap-8">
 					<h2>Contact us today and let us know what you need</h2>
 					<Reveal3>
 						<p className="max-w-lg xl:mt-3">We invite you to explore the transformative potential of PurpleDove ERP. Discover how our all-in-one platform can streamline your business operations, improve efficiency, and drive growth.</p>
 					</Reveal3>
 					<div className="flex items-center gap-2">
-						<Link href="/auth/signup" target="_blank" rel="noopener noreferrer">
+						<Link href="https://calendly.com/lassod/purpledove-webinar-session" target="_blank" rel="noopener noreferrer">
 							<Button className="flex items-center gap-2">
 								<PlayCircle className="w-5" />
 								Book A Demo Now
@@ -28,7 +28,7 @@ const Contact = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="grid grid-cols-2 gap-16">
+				<div className="grid grid-cols-2 gap-8 lg:gap-16">
 					<div className="flex flex-col gap-2 max-w-sm">
 						<div className="flex items-center gap-2">
 							<div className="bg-[#F8E7F9] p-[5px] rounded-full w-12">

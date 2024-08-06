@@ -9,8 +9,8 @@ import Image from "next/image";
 
 const Explore = () => {
 	return (
-		<section className="relative grid grid-cols-2 gap-10 items-center justify-between py-24 lg:pl-24 pl-8 max-w-screen-2xl mx-auto">
-			<div className="flex flex-col items-start gap-10 max-w-xl">
+		<section className="relative grid lg:grid-cols-2 py-8 lg:py-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto gap-8 md:gap-16">
+			<div className="flex flex-col items-start gap-6 lg:gap-10 max-w-xl">
 				<h5 className="text-gray-400 font-medium">EXPLORE</h5>
 				<h2>See PurpleDove ERP in Action</h2>
 				<Reveal3>
@@ -37,7 +37,7 @@ const Explore = () => {
 					</Button>
 				</Link>
 			</div>
-			<div className="relative max-w-[894px] overflow-hidden">
+			<div className="rounded-full rounded-br-none relative max-w-[894px] shadow-2xl shadow-[#F6E5F7] overflow-hidden">
 				<Image className="w-full" src={ExploreImg} alt="ExploreImg" />
 			</div>
 		</section>

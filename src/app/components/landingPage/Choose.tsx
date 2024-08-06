@@ -9,8 +9,8 @@ import { Button } from "@/components/ui/button";
 
 export const Choose = () => {
 	return (
-		<section className="flex flex-col gap-16 py-24 md:px-24 px-8 max-w-screen-2xl mx-auto">
-			<div className="grid grid-flow-col gap-44 items-center">
+		<section className="flex flex-col gap-8 lg:gap-16 py-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
+			<div className="grid lg:grid-flow-col gap-8 lg:gap-44 items-center">
 				<Reveal1>
 					<h2 className="max-w-sm 2xl:max-w-md">Why Choose PurpleDove ERP?</h2>
 				</Reveal1>
@@ -19,9 +19,9 @@ export const Choose = () => {
 				</Reveal3>
 			</div>
 
-			<div className="grid grid-cols-2 gap-20">
-				<div className="relative overflow-hidden rounded-2xl">
-					<Image className="absolute z-[-10] w-full" src={ChooseImage} alt="ChooseImage" />
+			<div className="grid lg:grid-cols-2 gap-8 lg:gap-20">
+				<div className="relative overflow-hidden rounded-2xl h-[343px] lg:h-auto">
+					<Image className="absolute z-[-10] w-full h-full lg:h-auto" src={ChooseImage} alt="ChooseImage" />
 					<div className="flex flex-col justify-between items-start p-6 w-full h-full">
 						<div>
 							<p className="text-white">Ready For The Future</p>
@@ -57,7 +57,7 @@ export const Choose = () => {
 
 export const ChoosePromo = () => {
 	return (
-		<section className="grid grid-cols-2 gap-16 items-center justify-between py-24 lg:px-24 px-8 max-w-screen-2xl mx-auto">
+		<section className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center justify-between py-24 px-4 xl:px-24 lg:px-8 max-w-screen-2xl mx-auto">
 			<div className="flex flex-col gap-8">
 				<h2 className="max-w-md">Why Choose PurpleDove ERP?</h2>
 				<Reveal3>
@@ -72,7 +72,7 @@ export const ChoosePromo = () => {
 					</Link>
 				</div>
 			</div>
-			<div className="grid grid-cols-2 gap-4">
+			<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 				{chooseDataPromo.map((item) => (
 					<div className="flex flex-col gap-3 border rounded-xl p-6 bg-white" key={item.title}>
 						<div className="bg-[#FBF2FB] flex items-center justify-center p-1 rounded-full w-9">

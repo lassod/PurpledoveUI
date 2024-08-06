@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/landingPage/Header";
 import Footer from "../components/landingPage/Footer";
-import { navContent } from "../components/assets/data/Components";
+import { navContent, navContentPromo } from "../components/assets/data/Components";
 import { Hero } from "../components/landingPage/Hero";
 import { AboutPromo } from "../components/landingPage/About";
 import { ChoosePromo } from "../components/landingPage/Choose";
@@ -13,7 +13,7 @@ import { ContactPromo } from "../components/landingPage/Contact";
 const PromoLandingPage = () => {
 	return (
 		<div className="bg-[#FDFAFD]">
-			<Header headerData={navContent} />
+			<Header headerData={navContentPromo} />
 			<Hero display={true} />
 			<AboutPromo />
 			<ChoosePromo />
@@ -21,7 +21,7 @@ const PromoLandingPage = () => {
 			<Explore />
 			<TestimonialPromo />
 			<ContactPromo />
-			<Footer footerData={navContent} />
+			<Footer footerData={navContentPromo} />
 		</div>
 	);
 };

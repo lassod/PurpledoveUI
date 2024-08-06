@@ -6,7 +6,7 @@ import { AddContentProps } from "../schema/Types";
 
 const Features = ({ display }: AddContentProps) => {
 	return (
-		<section className="flex flex-col gap-16 py-24 md:px-24 px-8 max-w-screen-2xl mx-auto">
+		<section className={`lg:flex flex-col gap-16 py-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto ${display && "hidden"}`}>
 			<div className="flex flex-col justify-between items-center gap-4">
 				<p className="text-[#A700AF] font-medium">Features</p>
 				<Reveal1>

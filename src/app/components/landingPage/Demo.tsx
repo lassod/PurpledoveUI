@@ -9,8 +9,8 @@ import Image from "next/image";
 
 const Demo = () => {
 	return (
-		<section className="flex flex-col gap-10 items-center justify-between py-24 lg:px-24 px-8 max-w-screen-2xl mx-auto">
-			<section className="grid grid-cols-2 gap-10 items-center justify-between">
+		<section className="flex flex-col gap-10 py-16 lg:py-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
+			<section className="grid lg:grid-cols-2 gap-10 items-center justify-between">
 				<div className="flex flex-col gap-8">
 					<h2 className="max-w-md">Industries We Serve</h2>
 					<Reveal3>
@@ -31,11 +31,13 @@ const Demo = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="relative">
-					<Image className="w-full" src={demoImage1} alt="demoImage1" />
+				<div className="relative lg:block hidden">
+					<Image className="max-w-full" src={demoImage1} alt="demoImage1" />
 				</div>
-				<Image className="max-w-[893px]" src={demoImage2} alt="demoImage2" />
 			</section>
+			<div className="max-w-[893px]">
+				<Image className="w-full" src={demoImage2} alt="demoImage2" />
+			</div>
 		</section>
 	);
 };

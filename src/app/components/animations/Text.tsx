@@ -192,7 +192,7 @@ export const Reveal5 = ({ children, width = "fit-content" }: Props) => {
 					bottom: 4,
 					left: 0,
 					right: 0,
-					background: "#fff",
+					background: "#A700AF",
 					zIndex: 1,
 				}}
 			/>

@@ -6,7 +6,7 @@ import { HeroAbout } from "../components/landingPage/Hero";
 import aboutImg2 from "../components/assets/images/aboutImg2.png";
 import { Reveal1, Reveal3 } from "../components/animations/Text";
 import Image from "next/image";
-import Contact from "../components/landingPage/Contact";
+import { Contact } from "../components/landingPage/Contact";
 
 const About = () => {
 	return (

@@ -39,18 +39,21 @@ export const Counter = ({ target, className }: CounterProps) => {
 					// Start interval for new counting
 					const intervalId = setInterval(updateCounter, 1);
 
+					// New cleanup function for counting
 					return () => clearInterval(intervalId);
 				}
 			});
 		});
 
-		if (counterRef.current) {
-			observer.observe(counterRef.current); // Observe the counter element
+		// Capture current ref in a local variable
+		const currentRef = counterRef.current;
+		if (currentRef) {
+			observer.observe(currentRef); // Observe the counter element
 		}
 
 		return () => {
-			if (counterRef.current) {
-				observer.unobserve(counterRef.current); // Clean up observer on unmount
+			if (currentRef) {
+				observer.unobserve(currentRef); // Clean up observer on unmount
 			}
 		};
 	}, [target]); // This effect depends on the target prop

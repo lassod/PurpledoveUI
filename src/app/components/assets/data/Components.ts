@@ -43,8 +43,8 @@ import post5 from "../images/blog/post-5.png";
 import post6 from "../images/blog/post-6.png";
 import post7 from "../images/blog/post-7.png";
 import post8 from "../images/blog/post-8.png";
-import post9 from "../images/blog/post-9.png";
-import post10 from "../images/blog/post-10.png";
+// import post9 from "../images/blog/post-9.png";
+// import post10 from "../images/blog/post-10.png";
 
 // LANDING PAGE
 export const navContent = [

@@ -29,7 +29,7 @@ export const Hero = ({ display }: AddContentProps) => {
 		<section className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-between pt-48 pb-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
 			<div className="flex flex-col gap-8 items-start">
 				{display && (
-					<Link href="/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-5 bg-[#F6E5F7] p-2 rounded-full max-w-[354px]">
+					<Link href="/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-5 bg-[#F6E5F7] p-2 rounded-full max-w-[404px]">
 						<p className="text-white font-medium bg-[#A700AF] py-1 px-4 rounded-full">NEW</p>
 						<p className="text-black font-medium">Visit the PurpleDove website</p>
 						<ChevronRight />

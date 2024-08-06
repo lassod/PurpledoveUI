@@ -97,7 +97,7 @@ export const TestimonialPromo = () => {
 					<h2 className="max-w-[694px] text-center">What Our Clients Say About PurpleDove</h2>
 				</Reveal1>
 			</div>
-			<div className="w-[7500px] flex gap-6">
+			<div className="w-[7400px] flex gap-6">
 				<div className="testimonial-slider2 flex gap-6 w-[4000px]">
 					{testimonialDataPromo.map((item) => (
 						<div className="border bg-white rounded-xl p-10 flex flex-col gap-4 w-[471px]" key={item.name}>
@@ -129,7 +129,7 @@ export const TestimonialPromo = () => {
 					))}
 				</div>
 			</div>
-			<div className="w-full flex flex-row-reverse gap-6 overflow-x-hidden">
+			<div className="border-4 w-[7400px] flex flex-row-reverse">
 				<div className="testimonial-slider3 flex gap-6 w-[4000px]">
 					{testimonialDataPromo.map((item) => (
 						<div className="border bg-white rounded-xl p-10 flex flex-col gap-4 w-[471px]" key={item.name}>

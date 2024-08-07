@@ -20,7 +20,7 @@ const Header = ({ headerData }: HeaderProps) => {
 						</Link>
 					))}
 				</ul>
-				<Link target="_blank" rel="noopener noreferrer" href="auth/signin">
+				<Link target="_blank" rel="noopener noreferrer" href="https://calendly.com/lassod/purpledove-webinar-session">
 					<Button>Get started</Button>
 				</Link>
 			</div>

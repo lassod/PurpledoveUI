@@ -4,7 +4,7 @@ import { Counter } from "../animations/Counter";
 import ExploreImg from "../assets/images/promo/promo-4.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { PlayCircle } from "lucide-react";
+import { ArrowUpRight, PlayCircle } from "lucide-react";
 import Image from "next/image";
 
 const Explore = () => {
@@ -32,8 +32,8 @@ const Explore = () => {
 				</div>
 				<Link href="https://calendly.com/lassod/purpledove-webinar-session" target="_blank" rel="noopener noreferrer">
 					<Button className="flex items-center gap-2">
-						<PlayCircle className="w-5" />
 						Book A Demo Now
+						<ArrowUpRight className="w-5" />
 					</Button>
 				</Link>
 			</div>

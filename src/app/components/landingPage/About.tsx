@@ -4,7 +4,7 @@ import { Reveal1, Reveal3 } from "../animations/Text";
 import Star from "../assets/images/Star.png";
 import PromoImg from "../assets/images/promo/promo-2.png";
 import Image from "next/image";
-import { Counter } from "../animations/Counter";
+// import { Counter } from "../animations/Counter";
 
 export const About = () => {
 	const text = "OPTIMIZE   YOUR  BUSINESS   TODAY  ";
@@ -48,10 +48,10 @@ export const AboutPromo = () => {
 		<section className="bg-[#F6E5F7] grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-28 items-center justify-between py-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
 			<div className="relative max-w-[447px] border-4 mx-auto">
 				<Image className="max-w-full" src={PromoImg} alt="PromoImg" />
-				<div className="w-[180px] sm:w-[224px] rounded-lg p-6 absolute top-16 lg:top-auto lg:bottom-10 right-[-10px] sm:right-[-60px] bg-white">
+				{/* <div className="w-[180px] sm:w-[224px] rounded-lg p-6 absolute top-16 lg:top-auto lg:bottom-10 right-[-10px] sm:right-[-60px] bg-white">
 					<Counter target={250} className="mb-4" />
 					<p className="text-black">Happy Clients</p>
-				</div>
+				</div> */}
 			</div>
 			<div className="flex flex-col gap-8 max-w-4xl">
 				<Reveal1>

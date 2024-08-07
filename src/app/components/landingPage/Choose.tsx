@@ -21,7 +21,7 @@ export const Choose = () => {
 
 			<div className="grid lg:grid-cols-2 gap-8 lg:gap-20">
 				<div className="relative overflow-hidden rounded-2xl h-[343px] lg:h-auto">
-					<Image className="absolute z-[-10] w-full h-full sm:h-auto" src={ChooseImage} alt="ChooseImage" />
+					<Image className="absolute z-[-10] w-full lg:max-w-[586px] xl:max-w-full h-full 2xl:h-auto" src={ChooseImage} alt="ChooseImage" />
 					<div className="flex flex-col justify-between items-start p-6 w-full h-full">
 						<div>
 							<p className="text-white">Ready For The Future</p>

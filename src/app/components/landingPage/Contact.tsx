@@ -11,26 +11,26 @@ import { Headphones, PhoneCall } from "lucide-react";
 
 export const Contact = () => {
 	return (
-		<section className="border-4 relative py-24 lg:px-8 xl:px-24 px-4 hidden lg:block max-w-screen-2xl mx-auto">
-			<div className="bg-[#6C0871] rounded-xl p-10 flex gap-48">
-				<div className="flex flex-col gap-8 justify-start items-start">
+		<section className="relative py-24 lg:px-8 xl:px-24 px-4 hidden lg:block max-w-screen-2xl mx-auto">
+			<div className="bg-[#6C0871] rounded-xl p-10 flex gap-8">
+				<div className=" relative flex flex-col gap-8 justify-start items-start max-w-[60%]">
 					<Reveal1>
-						<h2 className="text-white max-w-[950px]">Contact us today and let us know what you need</h2>
+						<h2 className="text-white">Contact us today and let us know what you need</h2>
 					</Reveal1>
 					<Reveal3>
-						<p className="text-white max-w-[750px]">We invite you to explore the transformative potential of PurpleDove ERP. Discover how our all-in-one platform can streamline your business operations, improve efficiency, and drive growth.</p>
+						<p className="text-white max-w-[80%]">We invite you to explore the transformative potential of PurpleDove ERP. Discover how our all-in-one platform can streamline your business operations, improve efficiency, and drive growth.</p>
 					</Reveal3>
 					<Link href="https://calendly.com/lassod/purpledove-webinar-session" target="_blank" rel="noopener noreferrer">
 						<Button variant={"secondary"} className="mt-6">
 							Contact Us
 						</Button>
 					</Link>
-				</div>
-				<div className="w-96">
-					<Image className="mt-14 h-14" src={Arrow} alt="Arrow" />
+					<div className="absolute right-[-30%] top-0 ">
+						<Image className="mt-14 h-14" src={Arrow} alt="Arrow" />
+					</div>
 				</div>
 			</div>
-			<Image className="absolute max-w-[440px] xl:max-w-[640px] bottom-0 right-[-10px] " src={ContactImage} alt="ContactImage" />
+			<Image className="absolute max-w-[440px] xl:max-w-[640px] bottom-0 right-0" src={ContactImage} alt="ContactImage" />
 		</section>
 	);
 };
@@ -57,7 +57,7 @@ export const ContactPromo = () => {
 						<div className="flex flex-col items-center gap-3">
 							<h5>Customer Service</h5>
 							<p className="text-center">Contact us to seek help from us, we will help you as soon as possible</p>
-							<p className="text-center"> info@purpledove.net</p>
+							<p className="text-center">info.purpledove.net@gmail.com</p>
 							<Button className="mt-6">Contact us</Button>
 						</div>
 					</div>

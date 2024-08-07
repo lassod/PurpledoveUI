@@ -26,15 +26,15 @@ import { AddContentProps } from "../schema/Types";
 
 export const Hero = ({ display }: AddContentProps) => {
 	return (
-		<section className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-between pt-48 pb-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
+		<section className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-between pt-36 sm:pt-48 pb-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
 			<div className="flex flex-col gap-8 items-start">
-				{display && (
+				{/* {display && (
 					<Link href="/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-5 bg-[#F6E5F7] p-2 rounded-full max-w-[404px]">
 						<p className="text-white font-medium bg-[#A700AF] py-1 px-4 rounded-full">NEW</p>
 						<p className="text-black text-[13px] sm:text-[14px] font-medium">Visit the PurpleDove website</p>
 						<ChevronRight />
 					</Link>
-				)}
+				)} */}
 				<h1>Transform Your Business With PurpleDove ERP</h1>
 				<Reveal3>
 					<p className="max-w-lg xl:mt-3">Experience the unparalleled efficiency and growth potential with our cost-effective ERP solution, tailored to your needs.</p>
@@ -50,13 +50,13 @@ export const Hero = ({ display }: AddContentProps) => {
 			<div className="relative">
 				{display ? <Image className="w-full" src={heroImage2} alt="heroImage2" /> : <Image className="w-full" src={heroImage} alt="heroImage" />}
 
-				{!display && (
+				{/* {!display && (
 					<div className="rounded-lg p-6 absolute bottom-6 right-6 bg-white">
 						<Image className="w-full" src={heroLogos} alt="heroLogos" />
 						<Counter target={200} className="mt-12 mb-2" />
 						<p className="text-black">Happy Clients</p>
 					</div>
-				)}
+				)} */}
 			</div>
 		</section>
 	);
@@ -64,7 +64,7 @@ export const Hero = ({ display }: AddContentProps) => {
 
 export const HeroFeatures = () => {
 	return (
-		<section className="relative grid-cols-1 grid md:grid-cols-2 gap-10 items-center justify-between pt-48 pb-20 lg:pb-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
+		<section className="relative grid-cols-1 grid md:grid-cols-2 gap-10 items-center justify-between pt-36 sm:pt-48 pb-20 lg:pb-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
 			<div className="flex flex-col gap-10 max-w-md">
 				<h2>Discover Our Powerful Modules</h2>
 				<Reveal3>
@@ -95,7 +95,7 @@ export const HeroFeatures = () => {
 
 export const HeroAbout = () => {
 	return (
-		<section className="relative grid lg:grid-cols-2 gap-40 items-center justify-between pt-48 pb-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
+		<section className="relative grid lg:grid-cols-2 gap-40 items-center justify-between pt-36 sm:pt-48 pb-24 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
 			<div className="flex flex-col gap-10">
 				<h2>Our cloud-based solution is designed to streamline the diverse needs of businesses</h2>
 				<Reveal3>
@@ -127,7 +127,7 @@ export const HeroContact = () => {
 	};
 
 	return (
-		<section className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 pt-48 pb-24 md:px-24 sm:px-8 px-4 max-w-screen-2xl mx-auto">
+		<section className="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 pt-36 sm:pt-48 pb-24 md:px-24 sm:px-8 px-4 max-w-screen-2xl mx-auto">
 			<div className="flex flex-col gap-5">
 				<h2>Get Started with PurpleDove ERP</h2>
 				<Reveal3>

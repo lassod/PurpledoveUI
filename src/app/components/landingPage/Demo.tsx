@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowUpRight, PlayCircle } from "lucide-react";
+import { PlayCircle } from "lucide-react";
 import demoImage1 from "../assets/images/demoImage1.png";
 import demoImage2 from "../assets/images/demoImage2.png";
 import { Reveal3 } from "../animations/Text";

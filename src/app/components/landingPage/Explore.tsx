@@ -1,6 +1,6 @@
 import React from "react";
 import { Reveal3 } from "../animations/Text";
-import { Counter } from "../animations/Counter";
+//import { Counter } from "../animations/Counter";
 import ExploreImg from "../assets/images/promo/promo-4.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -16,7 +16,7 @@ const Explore = () => {
 				<Reveal3>
 					<p>Experience the power of PurpleDove ERP with a personalised demo. Our experts will show you how our ERP system can transform your business operations and drive growth.</p>
 				</Reveal3>
-				<div className="flex items-center justify-between gap-14">
+				{ /*<div className="flex items-center justify-between gap-14">
 					<div className="flex flex-col items-center justify-center gap-1">
 						<Counter target={3} className="text-[#A700AF]" />
 						<p className="text-center">YEARS EXISTENCE</p>
@@ -29,7 +29,7 @@ const Explore = () => {
 						<Counter target={250} className="text-[#ab36b1]" />
 						<p className="text-center">HAPPY CLIENTS</p>
 					</div>
-				</div>
+				</div> */}
 				<Link href="https://calendly.com/lassod/purpledove-webinar-session" target="_blank" rel="noopener noreferrer">
 					<Button className="flex items-center gap-2">
 						Book A Demo Now

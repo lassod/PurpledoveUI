@@ -4,7 +4,7 @@ import { Counter } from "../animations/Counter";
 import ExploreImg from "../assets/images/promo/promo-4.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowUpRight, PlayCircle } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 const Explore = () => {

@@ -2,10 +2,10 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowUpRight, ChevronRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import heroImage from "../assets/images/heroImage.png";
 import heroImage2 from "../assets/images/promo/promo-1.png";
-import heroLogos from "../assets/images/heroLogos.png";
+// import heroLogos from "../assets/images/heroLogos.png";
 import ContactImage from "../assets/images/ContactImage.svg";
 import featuresImg from "../assets/images/featuresImg.png";
 import aboutImg from "../assets/images/aboutImg.png";
@@ -13,7 +13,7 @@ import aboutLogo from "../assets/images/aboutLogo.png";
 import eclipse from "../assets/images/eclipse.png";
 import { Reveal3 } from "../animations/Text";
 import Image from "next/image";
-import { Counter } from "../animations/Counter";
+// import { Counter } from "../animations/Counter";
 import { Form, FormField, FormItem, FormMessage } from "@/components/ui/form";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -70,7 +70,7 @@ export const HeroFeatures = () => {
 				<Reveal3>
 					<p>Empowering your enterprise with cutting-edge tools to maximize productivity and streamline your operations.</p>
 				</Reveal3>
-				<div className="flex items-center justify-between gap-2">
+				{/* <div className="flex items-center justify-between gap-2">
 					<div className="flex flex-col items-center gap-1">
 						<Counter target={3} className="" />
 						<p>Years existence</p>
@@ -83,7 +83,7 @@ export const HeroFeatures = () => {
 						<Counter target={250} className="" />
 						<p>Happy clients</p>
 					</div>
-				</div>
+				</div> */}
 			</div>
 			<div className="h-[367px] lg:h-[425px] rounded-[30px] overflow-hidden">
 				<Image className="w-full" src={featuresImg} alt="featuresImg" />

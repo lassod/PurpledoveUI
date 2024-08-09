@@ -9,21 +9,23 @@ import Features from "../components/landingPage/Features";
 import Explore from "../components/landingPage/Explore";
 import { TestimonialPromo } from "../components/landingPage/Testimonial";
 import { ContactPromo } from "../components/landingPage/Contact";
+import WhatsApp from "../components/WhatsApp";
 
 const PromoLandingPage = () => {
-	return (
-		<div className="bg-[#FDFAFD]">
-			<Header headerData={navContentPromo} />
-			<Hero display={true} />
-			<AboutPromo />
-			<ChoosePromo />
-			<Features display={true} />
-			<Explore />
-			<TestimonialPromo />
-			<ContactPromo />
-			<Footer footerData={navContentPromo} />
-		</div>
-	);
+  return (
+    <div className="bg-[#FDFAFD]">
+      <Header headerData={navContentPromo} />
+      <Hero display={true} />
+      <AboutPromo />
+      <ChoosePromo />
+      <Features display={true} />
+      <Explore />
+      <TestimonialPromo />
+      <ContactPromo />
+      <Footer footerData={navContentPromo} />
+      <WhatsApp />
+    </div>
+  );
 };
 
 export default PromoLandingPage;

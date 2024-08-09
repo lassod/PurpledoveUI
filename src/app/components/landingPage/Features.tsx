@@ -4,7 +4,7 @@ import Image from "next/image";
 import { featuresData } from "../assets/data/Components";
 import { AddContentProps } from "../schema/Types";
 
-const Features = ({ display }: AddContentProps) => {
+const Features = ({ display, heading }: AddContentProps) => {
   return (
     <section
       id="features"
@@ -12,7 +12,9 @@ const Features = ({ display }: AddContentProps) => {
       }`}
     >
       <div className="flex flex-col justify-between items-center gap-4">
-        <p className="text-[#A700AF] font-medium">Features</p>
+        <p className={`text-[#A700AF] font-medium ${heading ? "hidden" : ""}`}>
+          Features
+        </p>
         <Reveal1>
           <h2 className="text-center">Explore Our Comprehensive Modules</h2>
         </Reveal1>

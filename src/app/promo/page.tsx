@@ -18,7 +18,7 @@ const PromoLandingPage = () => {
       <Hero display={true} />
       <AboutPromo />
       <ChoosePromo />
-      <Features display={true} />
+      <Features display={true} heading={true} />
       <Explore />
       <TestimonialPromo />
       <ContactPromo />

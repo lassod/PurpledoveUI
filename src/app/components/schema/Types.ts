@@ -1,21 +1,22 @@
 export type CounterProps = {
-	target: number;
-	className: string;
+  target: number;
+  className: string;
 };
 
 export type headerDataProps = {
-	url: string;
-	title?: string;
+  url: string;
+  title?: string;
 };
 
 export interface HeaderProps {
-	headerData: headerDataProps[];
+  headerData: headerDataProps[];
 }
 
 export interface FooterProps {
-	footerData: headerDataProps[];
+  footerData: headerDataProps[];
 }
 
 export interface AddContentProps {
-	display: boolean;
+  display: boolean;
+  heading?: boolean;
 }

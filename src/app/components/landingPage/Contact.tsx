@@ -51,6 +51,9 @@ export const Contact = () => {
 };
 
 export const ContactPromo = () => {
+  const phoneNumber = "+2347064699173";
+  const phoneNumber2 = "+447983451470";
+  const emailAddress = "info@purpledove.net";
   return (
     <section className="relative pt-0 xl:pt-24 pb-24 px-4 max-w-screen-2xl mx-auto overflow-hidden">
       <div className="flex flex-col items-center gap-16">
@@ -68,7 +71,31 @@ export const ContactPromo = () => {
                 Contact us to seek help from us, we will help you as soon as
                 possible
               </p>
-              <p className="text-center">+234 706 469 9173 / +44 7983 451470</p>
+              <div className="text-center">
+                <div className="relative inline-block text-md cursor-pointer group">
+                  <span className="underline-offset-4">
+                    <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+                  </span>
+                  <div className="absolute w-full bg-white py-[2px] text-center top-10 left-0 opacity-0 invisible transform shadow-md transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:visible group-hover:top-[-40px] ">
+                    <p className="m-0 font-semibold">
+                      <a href={`tel:${phoneNumber}`}> Call </a>
+                    </p>
+                    <div className="absolute bottom-[-8px] left-[80%] transform -translate-x-1/2 border-t-[8px] border-l-[7px] border-r-[7px] border-b-0 border-solid border-t-white border-l-transparent border-r-transparent"></div>
+                  </div>
+                </div>{" "}
+                /{" "}
+                <div className="relative inline-block text-md cursor-pointer group">
+                  <span className="underline-offset-4">
+                    <a href={`tel:${phoneNumber2}`}>{phoneNumber2}</a>
+                  </span>
+                  <div className="absolute w-full bg-white py-[2px] text-center top-10 left-0 opacity-0 invisible transform shadow-md transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:visible group-hover:top-[-40px]">
+                    <p className="m-0 font-semibold">
+                      <a href={`tel:${phoneNumber2}`}> Call </a>
+                    </p>
+                    <div className="absolute bottom-[-8px] left-[80%] transform -translate-x-1/2 border-t-[8px] border-l-[7px] border-r-[7px] border-b-0 border-solid border-t-white border-l-transparent border-r-transparent"></div>
+                  </div>
+                </div>
+              </div>
               <Link href="/promo/contact">
                 <Button className="mt-6">Call us now</Button>
               </Link>
@@ -82,7 +109,20 @@ export const ContactPromo = () => {
                 Contact us to seek help from us, we will help you as soon as
                 possible
               </p>
-              <p className="text-center">info.purpledove.net@gmail.com</p>
+              <div className="text-center">
+                <div className="relative inline-block text-[18px] cursor-pointer group">
+                  <span className=" decoration-gray-500 underline-offset-4">
+                    <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
+                  </span>
+                  <div className="absolute w-full bg-white p-1 text-center top-10 left-0 opacity-0 invisible transform shadow-md transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:visible group-hover:top-0">
+                    <p className="m-0  font-semibold">
+                      {" "}
+                      <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
+                    </p>
+                    <div className="absolute bottom-[-8px] left-[80%] transform -translate-x-1/2 border-t-[8px] border-l-[7px] border-r-[7px] border-b-0 border-solid border-t-white border-l-transparent border-r-transparent"></div>
+                  </div>
+                </div>
+              </div>
               <Link href="/promo/contact">
                 <Button className="mt-6">Contact us</Button>
               </Link>

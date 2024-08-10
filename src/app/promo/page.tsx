@@ -7,7 +7,7 @@ import { AboutPromo } from "../components/landingPage/About";
 import { ChoosePromo } from "../components/landingPage/Choose";
 import Features from "../components/landingPage/Features";
 import Explore from "../components/landingPage/Explore";
-import { TestimonialPromo } from "../components/landingPage/Testimonial";
+// import { TestimonialPromo } from "../components/landingPage/Testimonial";
 import { ContactPromo } from "../components/landingPage/Contact";
 import WhatsApp from "../components/WhatsApp";
 
@@ -21,7 +21,7 @@ const PromoLandingPage = () => {
 
       <Features display={true} heading={true} />
       <Explore />
-      <TestimonialPromo />
+      {/* <TestimonialPromo /> */}
       <ContactPromo />
       <Footer footerData={navContentPromo} />
       <WhatsApp />

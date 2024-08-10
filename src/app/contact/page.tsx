@@ -10,6 +10,8 @@ import { Mail, Phone, PlayCircle } from "lucide-react";
 import WhatsApp from "../components/WhatsApp";
 
 const Contact = () => {
+  const phoneNumber = "+2347064699173";
+  const phoneNumber2 = "+447983451470";
   return (
     <div>
       <Header headerData={navContent} />
@@ -49,7 +51,9 @@ const Contact = () => {
             </div>
             <h5 className="mt-2">Call Us On</h5>
             <Reveal3>
-              <p className="text-center">+2347064699173 </p>
+              <span className="underline-offset-4">
+                <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+              </span>
             </Reveal3>
           </div>
           <div className="flex flex-col gap-2 max-w-sm">
@@ -62,7 +66,9 @@ const Contact = () => {
             </div>
             <h5 className="mt-2">Call Us On</h5>
             <Reveal3>
-              <p className="text-center">+2347064699173 </p>
+              <span className="underline-offset-4">
+                <a href={`tel:${phoneNumber2}`}>{phoneNumber2}</a>
+              </span>
             </Reveal3>
           </div>
         </div>

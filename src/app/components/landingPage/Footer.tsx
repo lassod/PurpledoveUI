@@ -48,7 +48,7 @@ const Footer = ({ footerData }: FooterProps) => {
       </ul>
       <div className="mt-10 flex flex-col-reverse md:flex-row items-center justify-between gap-4">
         <Reveal3>
-          <p>© 2024 PurpleDove events. All rights reserved.</p>
+          <p>@ 2024 PurpleDove ERP. All rights reserved.</p>
         </Reveal3>
         <div className="flex gap-5">
           <Reveal5>

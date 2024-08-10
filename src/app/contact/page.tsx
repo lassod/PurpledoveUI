@@ -7,6 +7,7 @@ import { Reveal3 } from "../components/animations/Text";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, PlayCircle } from "lucide-react";
+import WhatsApp from "../components/WhatsApp";
 
 const Contact = () => {
   return (
@@ -67,6 +68,7 @@ const Contact = () => {
         </div>
       </section>
       <Footer footerData={navContent} />
+      <WhatsApp />
     </div>
   );
 };

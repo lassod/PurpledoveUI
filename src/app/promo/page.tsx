@@ -10,6 +10,7 @@ import Explore from "../components/landingPage/Explore";
 // import { TestimonialPromo } from "../components/landingPage/Testimonial";
 import { ContactPromo } from "../components/landingPage/Contact";
 import WhatsApp from "../components/WhatsApp";
+import { TrustedByCompanies } from "../components/landingPage/TrustedByCompanies";
 
 const PromoLandingPage = () => {
   return (
@@ -18,10 +19,10 @@ const PromoLandingPage = () => {
       <Hero display={true} />
       <AboutPromo />
       <ChoosePromo />
-
-      <Features display={true} heading={true} />
       <Explore />
       {/* <TestimonialPromo /> */}
+      <Features display={false} />
+      <TrustedByCompanies />
       <ContactPromo />
       <Footer footerData={navContentPromo} />
       <WhatsApp />

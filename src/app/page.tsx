@@ -9,6 +9,7 @@ import Demo from "./components/landingPage/Demo";
 import { Contact } from "./components/landingPage/Contact";
 import Footer from "./components/landingPage/Footer";
 import WhatsApp from "./components/WhatsApp";
+import { TrustedByCompanies } from "./components/landingPage/TrustedByCompanies";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Choose />
       <Testimonial />
       <Demo />
+      <TrustedByCompanies />
       <Contact />
       <Footer footerData={navContent} />
       <WhatsApp />

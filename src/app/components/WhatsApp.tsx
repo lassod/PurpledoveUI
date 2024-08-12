@@ -32,3 +32,19 @@ function WhatsApp() {
 }
 
 export default WhatsApp;
+
+// ("use client");
+
+// import { Reveal1, Reveal5 } from "../animations/Text";
+// import Image from "next/image";
+
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+//   CarouselPrevious,
+//   CarouselNext,
+// } from "@/components/ui/carousel";
+
+// import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
+// import Autoplay from "embla-carousel-autoplay";

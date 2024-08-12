@@ -12,6 +12,7 @@ import WhatsApp from "../components/WhatsApp";
 const Contact = () => {
   const phoneNumber = "+2347064699173";
   const phoneNumber2 = "+447983451470";
+  const emailAddress = "info@purpledove.net";
   return (
     <div>
       <Header headerData={navContent} />
@@ -55,6 +56,11 @@ const Contact = () => {
                 <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
               </span>
             </Reveal3>
+            <Reveal3>
+              <span className="underline-offset-4">
+                <a href={`tel:${phoneNumber2}`}>{phoneNumber2}</a>
+              </span>
+            </Reveal3>
           </div>
           <div className="flex flex-col gap-2 max-w-sm">
             <div className="flex items-center gap-2">
@@ -64,10 +70,10 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <h5 className="mt-2">Call Us On</h5>
+            <h5 className="mt-2">Send Us a Mail</h5>
             <Reveal3>
               <span className="underline-offset-4">
-                <a href={`tel:${phoneNumber2}`}>{phoneNumber2}</a>
+                <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
               </span>
             </Reveal3>
           </div>

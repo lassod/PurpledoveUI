@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
@@ -19,7 +19,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { useForm } from "react-hook-form";
+import { useForm, SubmitHandler } from "react-hook-form";
 // import { google } from "googleapis";
 import {
   Select,
@@ -198,19 +198,40 @@ export const HeroContact = () => {
     resolver: zodResolver(formSchemaContact),
   });
 
-  const onSubmit = async (values: z.infer<typeof formSchemaContact>) => {
-    console.log(values);
+  const [loading, setLoading] = useState(false);
 
-    // Convert the form data into the required format
-    // const data = {
-    //   firstname: values.firstname,
-    //   lastname: values.lastname,
-    //   company: values.company,
-    //   email: values.email,
-    //   phone: values.phone,
-    // };
+  const onSubmit: SubmitHandler<z.infer<typeof formSchemaContact>> = async (
+    values
+  ) => {
+    console.log("onSubmit called");
+    console.log("Form values: ", values);
 
-    // Write data to Google Sheet
+    try {
+      setLoading(true);
+
+      const response = await fetch(
+        "http://lassod.purpledove.net/api/resource/PurpleDoveUsers",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        }
+      );
+
+      if (response.ok) {
+        console.log("Form submitted successfully!");
+        form.reset(); // Reset the form fields
+        console.log(response);
+      } else {
+        console.error("Form submission failed!");
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -231,7 +252,7 @@ export const HeroContact = () => {
             <div className="grid grid-cols-2 gap-4 max-w-full">
               <FormField
                 control={form.control}
-                name="firstname"
+                name="first_name" // Update the name to match the schema
                 render={({ field }) => (
                   <FormItem>
                     <Label>First Name</Label>
@@ -242,7 +263,7 @@ export const HeroContact = () => {
               />
               <FormField
                 control={form.control}
-                name="lastname"
+                name="last_name" // Update the name to match the schema
                 render={({ field }) => (
                   <FormItem>
                     <Label>Last Name</Label>
@@ -254,7 +275,7 @@ export const HeroContact = () => {
             </div>
             <FormField
               control={form.control}
-              name="company"
+              name="company_name" // Update the name to match the schema
               render={({ field }) => (
                 <FormItem>
                   <Label>Company name</Label>
@@ -265,7 +286,7 @@ export const HeroContact = () => {
             />
             <FormField
               control={form.control}
-              name="email"
+              name="email" // Update the name to match the schema
               render={({ field }) => (
                 <FormItem>
                   <Label>Email</Label>
@@ -276,51 +297,17 @@ export const HeroContact = () => {
             />
             <FormField
               control={form.control}
-              name="phone"
-              render={() => (
+              name="phone" // Update the name to match the schema
+              render={({ field }) => (
                 <FormItem>
                   <Label>Phone number</Label>
-                  <div className="flex items-center rounded-md border border-gray-300">
-                    <FormField
-                      control={form.control}
-                      name="country"
-                      render={({ field }) => (
-                        <Select
-                          onValueChange={field.onChange}
-                          defaultValue={field.value}
-                        >
-                          <SelectTrigger className="w-[86px] border-none">
-                            <SelectValue placeholder="US" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="+1">US</SelectItem>
-                            <SelectItem value="+234">NG</SelectItem>
-                            <SelectItem value="+237">GH</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="phone"
-                      render={({ field }) => (
-                        <FormItem className="w-full">
-                          <Input
-                            placeholder="+1 (555) 98363"
-                            className="border-none px-0"
-                            {...field}
-                          />
-                        </FormItem>
-                      )}
-                    />
-                  </div>
+                  <Input placeholder="+1 (555) 98363" {...field} />
                   <FormMessage />
                 </FormItem>
               )}
             />
-
-            <Button className="w-full mt-5" type="submit">
-              Send
+            <Button className="w-full mt-5" type="submit" disabled={loading}>
+              {loading ? "Sending..." : "Send"}
             </Button>
           </form>
         </Form>

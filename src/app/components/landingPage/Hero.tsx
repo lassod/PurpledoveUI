@@ -21,13 +21,13 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useForm, SubmitHandler } from "react-hook-form";
 // import { google } from "googleapis";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
 import { formSchemaContact } from "../schema/Forms";
 import { AddContentProps } from "../schema/Types";
 
@@ -223,7 +223,7 @@ export const HeroContact = () => {
       if (response.ok) {
         console.log("Form submitted successfully!");
         form.reset(); // Reset the form fields
-        console.log(response);
+        console.log(response.json);
       } else {
         console.error("Form submission failed!");
       }

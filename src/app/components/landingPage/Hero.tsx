@@ -210,7 +210,7 @@ export const HeroContact = () => {
       setLoading(true);
 
       const response = await fetch(
-        "http://lassod.purpledove.net/api/resource/PurpleDoveUsers",
+        "https://lassod.purpledove.net/api/resource/PurpleDoveUsers",
         {
           method: "POST",
           headers: {

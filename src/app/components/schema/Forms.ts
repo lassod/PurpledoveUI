@@ -11,12 +11,9 @@ import { z } from "zod";
 // });
 
 export const formSchemaContact = z.object({
-  first_name: z.string().nonempty("First name is required"),
-  last_name: z.string().nonempty("Last name is required"),
-  company_name: z.string().nonempty("Company name is required"),
-  email: z
-    .string()
-    .email("Invalid email address")
-    .nonempty("Email is required"),
-  phone: z.string().nonempty("Phone number is required"),
+  first_name: z.string().default(""),
+  last_name: z.string().default(""),
+  company_name: z.string().default(""),
+  email: z.string().email("Invalid email address").default(""),
+  phone: z.string().default(""),
 });

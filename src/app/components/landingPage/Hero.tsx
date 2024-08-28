@@ -199,6 +199,7 @@ export const HeroContact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const onSubmit: SubmitHandler<z.infer<typeof formSchemaContact>> = async (
     values
@@ -222,15 +223,41 @@ export const HeroContact = () => {
 
       if (response.ok) {
         console.log("Form submitted successfully!");
-        form.reset(); // Reset the form fields
-        console.log(response.json);
+        form.reset({
+          first_name: "",
+          last_name: "",
+          company_name: "",
+          email: "",
+          phone: "",
+        }); // Reset the form fields to empty values
+        setFormSubmitted(true); // Mark form as submitted
+
+        // Set a timeout to revert formSubmitted back to false after 15 seconds
+        setTimeout(() => {
+          setFormSubmitted(false);
+        }, 10000);
+        console.log(await response.json());
       } else {
         console.error("Form submission failed!");
       }
     } catch (error) {
       console.error("An error occurred:", error);
+      form.reset({
+        first_name: "",
+        last_name: "",
+        company_name: "",
+        email: "",
+        phone: "",
+      }); // Reset the form fields to empty values
     } finally {
       setLoading(false);
+      form.reset({
+        first_name: "",
+        last_name: "",
+        company_name: "",
+        email: "",
+        phone: "",
+      }); // Reset the form fields to empty values
     }
   };
 
@@ -306,8 +333,22 @@ export const HeroContact = () => {
                 </FormItem>
               )}
             />
-            <Button className="w-full mt-5" type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Send"}
+            <Button
+              className="w-full mt-5"
+              type="submit"
+              disabled={loading || formSubmitted}
+            >
+              {loading ? (
+                <div className="flex flex-row gap-2">
+                  <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
+                  <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.3s]"></div>
+                  <div className="w-4 h-4 rounded-full bg-blue-700 animate-bounce [animation-delay:.7s]"></div>
+                </div>
+              ) : formSubmitted ? (
+                "your form was submitted successfully"
+              ) : (
+                "Send"
+              )}
             </Button>
           </form>
         </Form>

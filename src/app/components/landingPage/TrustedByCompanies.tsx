@@ -23,28 +23,26 @@ import Company10 from "../assets/images/comp/nigeriaCleaningService.jpg";
 import Company11 from "../assets/images/comp/relicuus.jpg";
 
 export const TrustedByCompanies: React.FC = () => {
-  const plugin = React.useRef(
+  const plugin1 = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
   return (
     <section
       id="trustedBy"
-      className="flex flex-col items-center px-8 py-20 md:py-12 md:px-4 max-w-[1280px] mx-auto relative"
+      className="flex flex-col items-center px-8  md:py-12 md:px-4 mx-auto relative"
     >
-      <div className="flex flex-col justify-between items-center gap-4">
-        <Reveal1>
-          <h4 className="text-center text-[36px] mb-12 md:mb-8">
-            Trusted by Leading Companies Across Various Industries
-          </h4>
-        </Reveal1>
-      </div>
+      <Reveal1>
+        <h4 className="text-center relative text-black mt-4 mb-5 text-4xl sm:text-xl md:text-2xl lg:text-4xl">
+          Trusted by Leading Companies Across Various Industries
+        </h4>
+      </Reveal1>
       <Carousel
-        plugins={[plugin.current]}
-        className="max-w-full w-full mx-auto bg-gray-60 rounded-[10px]"
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}
+        plugins={[plugin1.current]}
+        className="mobileCardContainer mt-3"
+        onMouseEnter={plugin1.current.stop}
+        onMouseLeave={plugin1.current.reset}
       >
-        <CarouselContent>
+        <CarouselContent className="relative max-w-[1130px] gap-5 m-0">
           {[
             Company1,
             Company2,
@@ -58,10 +56,13 @@ export const TrustedByCompanies: React.FC = () => {
             Company10,
             Company11,
           ].map((companyImage, index) => (
-            <CarouselItem key={index}>
-              <div className="flex flex-col gap-2 items-center justify-center p-5">
+            <CarouselItem
+              key={index}
+              className=" m-0 relative flex  items-center max-w-[240px]  p-0 rounded-lg overflow-hidden "
+            >
+              <div>
                 <Image
-                  className="shadow-md max-w-[240px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-[360px] xl:max-w-[440px]"
+                  className=" m-0 shadow-md max-w-[240px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-[360px] xl:max-w-[440px]   inset-0 object-cover"
                   src={companyImage}
                   alt={`Company Logo ${index + 1}`}
                   width={240} // Ensure the dimensions are set

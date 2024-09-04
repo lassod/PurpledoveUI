@@ -51,8 +51,8 @@ export const Contact = () => {
 };
 
 export const ContactPromo = () => {
-  const phoneNumber = "+2347064699173";
-  const phoneNumber2 = "+447983451470";
+  // const phoneNumber = "+2347064699173";
+   // const phoneNumber2 = "+447983451470";
   const emailAddress = "info@purpledove.net";
   return (
     <section className="relative pt-0 xl:pt-24 pb-24 px-4 max-w-screen-2xl mx-auto overflow-hidden">

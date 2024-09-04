@@ -6,12 +6,12 @@ import { HeroContact } from "../components/landingPage/Hero";
 import { Reveal3 } from "../components/animations/Text";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, PlayCircle } from "lucide-react";
+import { Mail, PlayCircle } from "lucide-react";
 import WhatsApp from "../components/WhatsApp";
 
 const Contact = () => {
-  const phoneNumber = "+2347064699173";
-  const phoneNumber2 = "+447983451470";
+  // const phoneNumber = "+2347064699173";
+  // const phoneNumber2 = "+447983451470";
   const emailAddress = "info@purpledove.net";
   return (
     <div>

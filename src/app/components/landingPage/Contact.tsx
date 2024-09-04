@@ -72,7 +72,7 @@ export const ContactPromo = () => {
                 possible
               </p>
               <div className="text-center">
-                <div className="relative inline-block text-md cursor-pointer group">
+                {/*<div className="relative inline-block text-md cursor-pointer group">
                   <span className="underline-offset-4">
                     <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
                   </span>
@@ -83,7 +83,7 @@ export const ContactPromo = () => {
                     <div className="absolute bottom-[-8px] left-[80%] transform -translate-x-1/2 border-t-[8px] border-l-[7px] border-r-[7px] border-b-0 border-solid border-t-white border-l-transparent border-r-transparent"></div>
                   </div>
                 </div>{" "}
-                /{" "}
+                /{" "} */}
                 <div className="relative inline-block text-md cursor-pointer group">
                   <span className="underline-offset-4">
                     <a href={`tel:${phoneNumber2}`}>{phoneNumber2}</a>

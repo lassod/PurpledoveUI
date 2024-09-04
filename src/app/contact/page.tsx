@@ -41,8 +41,8 @@ const Contact = () => {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8 lg:gap-16">
-          {*/ <div className="flex flex-col gap-2 max-w-sm">
+        <div className="grid grid-cols-1 gap-8 lg:gap-16">
+          {/* <div className="flex flex-col gap-2 max-w-sm">
             <div className="flex items-center gap-2">
               <div className="bg-[#F8E7F9] p-[5px] rounded-full w-12">
                 <div className="bg-[#F5C3F7] flex items-center justify-center p-[5px] rounded-full w-full">
@@ -61,7 +61,7 @@ const Contact = () => {
                 <a href={`tel:${phoneNumber2}`}>{phoneNumber2}</a>
               </span>
             </Reveal3>
-          </div> */}
+          </div>  */}
           <div className="flex flex-col gap-2 max-w-sm">
             <div className="flex items-center gap-2">
               <div className="bg-[#F8E7F9] p-[5px] rounded-full w-12">

@@ -60,10 +60,10 @@ export const navContent = [
     url: "/features",
     title: "Features",
   },
-  // {
-  //   url: "/blog",
-  //   title: "Blog",
-  // },
+   {
+    url: "/blog",
+     title: "Blog",
+   },
   {
     url: "/contact",
     title: "Contact",

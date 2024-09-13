@@ -61,7 +61,7 @@ export const navContent = [
     title: "Features",
   },
    {
-    url: "/blog",
+    url: "https://blog.purpledove.net/",
      title: "Blog",
    },
   {

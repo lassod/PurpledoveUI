@@ -27,7 +27,7 @@ export const Choose = () => {
 							<p className="text-white">Ready For The Future</p>
 							<h3 className="text-white mt-4">Optimizing business processes effortlessly</h3>
 						</div>
-						<Link href="https://calendly.com/lassod/purpledove-webinar-session" target="_blank" rel="noopener noreferrer">
+						<Link href="https://portal.purpledove.net" target="_blank" rel="noopener noreferrer">
 							<Button className="flex items-center gap-2">
 								Try PurpleDove For Free
 								<ArrowUpRight className="w-5" />

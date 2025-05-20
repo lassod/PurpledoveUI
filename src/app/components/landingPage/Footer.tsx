@@ -19,7 +19,7 @@ const Footer = ({ footerData }: FooterProps) => {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://calendly.com/lassod/purpledove-webinar-session"
+            href="https://portal.purpledove.net/"
           >
             <Button>Get started</Button>
           </Link>

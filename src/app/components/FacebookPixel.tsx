@@ -1,5 +1,6 @@
 import React from "react";
 import Script from "next/script";
+import Image from "next/image";
 
 interface Props {
   containerId: string;
@@ -22,7 +23,7 @@ const FacebookPixel = ({ containerId }: Props) => {
         `}
       </Script>
       <noscript>
-        <img
+        <Image alt=""
           height="1"
           width="1"
           style={{ display: "none" }}

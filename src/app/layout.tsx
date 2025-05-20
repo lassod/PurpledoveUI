@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,7 +41,8 @@ export default function RootLayout({
         `}
         </Script>
         <noscript>
-          <img
+          <Image
+              alt=""
             height="1"
             width="1"
             style={{ display: "none" }}

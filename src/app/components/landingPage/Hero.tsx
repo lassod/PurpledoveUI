@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import {ArrowUpRight, Phone} from "lucide-react";
 import heroImage from "../assets/images/heroImage.png";
 import heroImage2 from "../assets/images/promo/promo-1.png";
 // import heroLogos from "../assets/images/heroLogos.png";
@@ -50,16 +50,23 @@ export const Hero = ({ display }: AddContentProps) => {
           </p>
         </Reveal3>
 
-        <Link
-          href="https://calendly.com/lassod/purpledove-webinar-session"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button className="flex items-center gap-2">
-            Schedule A Demo
-            <ArrowUpRight className="w-5" />
-          </Button>
-        </Link>
+          <div className="flex gap-3">
+              <Link
+                  href="https://calendly.com/lassod/purpledove-webinar-session"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >
+                  <Button className="flex items-center gap-2">
+                      Schedule A Demo
+                      <Phone className="w-5" />
+                  </Button>
+              </Link>
+              <Link target="_blank" rel="noopener noreferrer" href="https://portal.purpledove.net/">
+                  <Button className="flex items-center gap-2" variant={"outline"}>Buy now                       <ArrowUpRight className="w-5" />
+                  </Button>
+              </Link>
+          </div>
+
       </div>
       <div className="relative">
         {display ? (

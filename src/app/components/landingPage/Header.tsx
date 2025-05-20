@@ -20,9 +20,14 @@ const Header = ({ headerData }: HeaderProps) => {
 						</Link>
 					))}
 				</ul>
-				<Link target="_blank" rel="noopener noreferrer" href="https://calendly.com/lassod/purpledove-webinar-session">
-					<Button>Get started</Button>
-				</Link>
+				<div className="flex items-center  gap-4">
+					<Link target="_blank" rel="noopener noreferrer" href="https://portal.purpledove.net/">
+						<p className="text-[#A700AF] hover:underline font-medium"  >Try for free </p>
+					</Link>
+					<Link target="_blank" rel="noopener noreferrer" href="https://portal.purpledove.net/">
+						<Button>Buy now</Button>
+					</Link>
+				</div>
 			</div>
 			<div className="lg:hidden flex justify-between items-center pr-4 pl-3">
 				<Image src={Logo} alt="Logo" />
@@ -52,6 +57,21 @@ const MobileMenu = ({ headerData }: HeaderProps) => {
 							</SheetClose>
 						</section>
 					))}
+
+					{/* ADDITIONAL BUTTONS */}
+					<div className="mt-10  flex items-center justify-center gap-3">
+						<SheetClose asChild>
+							<Link target="_blank" rel="noopener noreferrer" href="https://portal.purpledove.net/">
+								<Button variant="secondary">Try for free</Button>
+							</Link>
+						</SheetClose>
+
+						<SheetClose asChild>
+							<Link target="_blank" rel="noopener noreferrer" href="https://portal.purpledove.net/">
+								<Button>Buy now</Button>
+							</Link>
+						</SheetClose>
+					</div>
 				</div>
 			</SheetContent>
 		</Sheet>

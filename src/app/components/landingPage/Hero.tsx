@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import {ArrowUpRight, Phone, PhoneCall} from "lucide-react";
+import {ArrowUpRight, Phone} from "lucide-react";
 import heroImage from "../assets/images/heroImage.png";
 import heroImage2 from "../assets/images/promo/promo-1.png";
 // import heroLogos from "../assets/images/heroLogos.png";

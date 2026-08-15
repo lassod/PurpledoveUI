@@ -183,6 +183,7 @@ export const featuresData = [
     title: "Manufacturing",
     text: "Optimize production processes and manage resources effectively.",
     icon: bolt,
+    // icon: bolt,
     icon2: bolt2,
   },
   {

@@ -60,10 +60,10 @@ export const navContent = [
     url: "/features",
     title: "Features",
   },
-   {
+  {
     url: "https://blog.purpledove.net/",
-     title: "Blog",
-   },
+    title: "Blog",
+  },
   {
     url: "/contact",
     title: "Contact",
@@ -109,7 +109,7 @@ export const testimonialData = [
   },
   {
     title:
-      "Purple Dove Reconcilier (from Lassod) is an app developed for consultants, auditors and those involved in large volume of data that needs to be reconciled or linked up.",
+      "Purple Dove Reconciler (from Lassod) is an app developed for consultants, auditors and those involved in large volume of data that needs to be reconciled or linked up.",
     text: "Large data of upwards of 5,000 transactions and above are easily sorted out and merged as may be required. That is, merging data from document A and document B becomes easy. Our experience in the use of the app has been wonderful. It reduces man hour that would have been engaged in the manual reconciliation of over 5,000 data.  We sincerely recommend it to those that are having large volumes of data to reconcile.",
     name: "Agochukwu Okpalaoka & Co",
     position: "Chartered Accountants, Lagos.",

@@ -41,12 +41,13 @@ export default function RootLayout({
         `}
         </Script>
         <noscript>
-          <Image
-              alt=""
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             height="1"
             width="1"
             style={{ display: "none" }}
-            src={`https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1`}
+            src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+            alt=""
           />
         </noscript>
       </body>

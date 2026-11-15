@@ -1,6 +1,10 @@
 import React from "react";
 import Header from "../components/landingPage/Header";
-import { aboutData, navContent } from "../components/assets/data/Components";
+import {
+  aboutData,
+  navContent,
+  FOOTER_CONTENT,
+} from "../components/assets/data/Components";
 import Footer from "../components/landingPage/Footer";
 import { HeroAbout } from "../components/landingPage/Hero";
 import aboutImg2 from "../components/assets/images/aboutImg2.png";
@@ -61,7 +65,7 @@ const About = () => {
       </section>
 
       <Contact />
-      <Footer footerData={navContent} />
+      <Footer footerData={FOOTER_CONTENT} />
       <WhatsApp />
     </div>
   );

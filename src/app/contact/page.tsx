@@ -1,6 +1,9 @@
 import React from "react";
 import Header from "../components/landingPage/Header";
-import { navContent } from "../components/assets/data/Components";
+import {
+  navContent,
+  FOOTER_CONTENT,
+} from "../components/assets/data/Components";
 import Footer from "../components/landingPage/Footer";
 import { HeroContact } from "../components/landingPage/Hero";
 import { Reveal3 } from "../components/animations/Text";
@@ -79,7 +82,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <Footer footerData={navContent} />
+      <Footer footerData={FOOTER_CONTENT} />
       <WhatsApp />
     </div>
   );

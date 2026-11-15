@@ -1,6 +1,9 @@
 import React from "react";
 import Header from "../components/landingPage/Header";
-import { navContent } from "../components/assets/data/Components";
+import {
+  navContent,
+  FOOTER_CONTENT,
+} from "../components/assets/data/Components";
 import Footer from "../components/landingPage/Footer";
 import { HeroFeatures } from "../components/landingPage/Hero";
 
@@ -13,7 +16,7 @@ const FeaturesPage = () => {
       <Header headerData={navContent} />
       <HeroFeatures />
       <Features display={false} />
-      <Footer footerData={navContent} />
+      <Footer footerData={FOOTER_CONTENT} />
       <WhatsApp />
     </div>
   );

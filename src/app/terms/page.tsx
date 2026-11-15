@@ -3,7 +3,10 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Header from "../components/landingPage/Header";
-import { navContent } from "../components/assets/data/Components";
+import {
+  navContent,
+  FOOTER_CONTENT,
+} from "../components/assets/data/Components";
 import Footer from "../components/landingPage/Footer";
 import { Reveal3 } from "../components/animations/Text";
 import WhatsApp from "../components/WhatsApp";
@@ -396,7 +399,7 @@ function renderItem(text: string, mode?: "def" | "sentence") {
   if (end === -1) return linkify(text);
   return (
     <>
-      <span className="font-semibold">{text.slice(0, end)}</span>
+      <span className="font-medium text-black">{text.slice(0, end)}</span>
       {linkify(text.slice(end))}
     </>
   );
@@ -463,8 +466,8 @@ const Terms = () => {
       <Header headerData={navContent} />
 
       {/* Hero */}
-      <section className="flex flex-col items-start gap-6 pt-36 sm:pt-48 pb-12 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
-        <p className="inline-block rounded-full border border-[#F6E5F7] bg-[#F6E5F7]/40 px-4 py-1.5 text-sm font-medium">
+      <section className="flex flex-col items-start gap-6 pt-32 sm:pt-36 pb-12 lg:px-8 xl:px-24 px-4 max-w-screen-2xl mx-auto">
+        <p className="inline-block text-center rounded-full border border-[#F6E5F7] bg-[#F6E5F7]/40 px-4 py-1.5 text-sm font-medium">
           Last updated: {LAST_UPDATED} · Version {VERSION}
         </p>
         <h1>PurpleDove ERP Terms and Conditions</h1>
@@ -510,7 +513,7 @@ const Terms = () => {
         </nav>
 
         {/* Terms body */}
-        <article className="min-w-0 max-w-3xl space-y-12">
+        <article className="min-w-0 max-w-3xl space-y-6 sm:space-y-12">
           <div className="space-y-4">
             {intro.map((t, i) => (
               <p key={i} className="text-base leading-relaxed">
@@ -521,7 +524,7 @@ const Terms = () => {
 
           {sections.map((s) => (
             <section key={s.id} id={s.id} className="scroll-mt-28 space-y-4">
-              <h3 className="text-2xl font-semibold">{s.title}</h3>
+              <h3 className="text-lg sm:text-2xl font-semibold">{s.title}</h3>
               {s.blocks.map((b, i) =>
                 "p" in b ? (
                   <p key={i} className="text-base leading-relaxed">
@@ -533,7 +536,7 @@ const Terms = () => {
                     className="list-disc space-y-2 pl-6 marker:text-[#A700AF]"
                   >
                     {b.ul.map((item, j) => (
-                      <li key={j} className="text-base leading-relaxed">
+                      <li key={j} className="text-gray-500 leading-relaxed">
                         {renderItem(item, b.lead)}
                       </li>
                     ))}
@@ -544,7 +547,7 @@ const Terms = () => {
           ))}
 
           <section id="contact" className="scroll-mt-28 space-y-4">
-            <h3 className="text-2xl font-semibold">24. Contact</h3>
+            <h3 className="text-lg sm:text-2xl font-semibold">24. Contact</h3>
             <address className="not-italic text-base leading-relaxed">
               <span className="font-semibold">
                 PurpleDove ERP, a product of Lassod Consulting Ltd
@@ -603,7 +606,7 @@ const Terms = () => {
         </article>
       </section>
 
-      <Footer footerData={navContent} />
+      <Footer footerData={FOOTER_CONTENT} />
       <WhatsApp />
     </div>
   );

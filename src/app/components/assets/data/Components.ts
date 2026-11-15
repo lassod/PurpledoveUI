@@ -58,7 +58,7 @@ export const navContent = [
   },
   {
     url: "/features",
-    title: "Features",
+    title: "Products & Solutions",
   },
   {
     url: "https://blog.purpledove.net/",
@@ -67,6 +67,37 @@ export const navContent = [
   {
     url: "/contact",
     title: "Contact",
+  },
+];
+
+export const FOOTER_CONTENT = [
+  {
+    url: "/",
+    title: "Home",
+  },
+  // {
+  //   url: "/about",
+  //   title: "About us",
+  // },
+  // {
+  //   url: "/features",
+  //   title: "Products & Solutions",
+  // },
+  {
+    url: "https://blog.purpledove.net/",
+    title: "Blog",
+  },
+  {
+    url: "/sla",
+    title: "Service Level Agreement",
+  },
+  {
+    url: "/terms",
+    title: "Terms",
+  },
+  {
+    url: "/privacy",
+    title: "Privacy & Policy",
   },
 ];
 

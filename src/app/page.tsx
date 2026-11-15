@@ -1,5 +1,8 @@
 import React from "react";
-import { navContent } from "./components/assets/data/Components";
+import {
+  FOOTER_CONTENT,
+  navContent,
+} from "./components/assets/data/Components";
 import Header from "./components/landingPage/Header";
 import { Hero } from "./components/landingPage/Hero";
 import { About } from "./components/landingPage/About";
@@ -22,7 +25,7 @@ export default function Home() {
       <Demo />
       <TrustedByCompanies />
       <Contact />
-      <Footer footerData={navContent} />
+      <Footer footerData={FOOTER_CONTENT} />
       <WhatsApp />
     </main>
   );

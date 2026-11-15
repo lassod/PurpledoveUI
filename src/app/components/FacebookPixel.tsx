@@ -1,6 +1,5 @@
 import React from "react";
 import Script from "next/script";
-import Image from "next/image";
 
 interface Props {
   containerId: string;

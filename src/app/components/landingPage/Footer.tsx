@@ -32,17 +32,22 @@ const Footer = ({ footerData }: FooterProps) => {
             Elevate your business to new heights with PurpleDove ERP.
           </p>
         </Reveal3>
-        <p className="text-black max-w-[409px] font-medium">
-          Our Address: Bookshop House 13th floor, 50/52 Broad Street, Marina,
-          Lagos, Nigeria.
-        </p>
+        <div className="flex flex-col gap-2">
+          <p className="max-w-[409px]">Our Address:</p>
+          <p className="max-w-[409px]">
+            <b className="text-black font-medium"> Lagos address:</b> Bookshop
+            House 13th floor, 50/52 Broad Street, Marina, Lagos, Nigeria.
+          </p>
+          <p className="max-w-[409px]">
+            <b className="text-black font-medium"> Ilorin Office: </b>
+            16B Coca-Cola Road, Off Unity Road, Ilorin, Kwara State
+          </p>
+        </div>
       </div>
       <ul className="grid grid-cols-2 sm:flex gap-4 sm:gap-9 flex-wrap">
         {footerData.map((item, index) => (
           <Link key={index} href={item.url}>
-            <p className="text-black hover:text-[#A700AF] font-semibold">
-              {item.title}
-            </p>
+            <p className="text-black hover:text-[#A700AF]">{item.title}</p>
           </Link>
         ))}
       </ul>
